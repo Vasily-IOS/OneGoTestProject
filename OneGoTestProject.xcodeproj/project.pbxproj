@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		5DC054E527BBE9AE0077A75B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC054E427BBE9AE0077A75B /* AppDelegate.swift */; };
 		5DC054E727BBE9AE0077A75B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC054E627BBE9AE0077A75B /* SceneDelegate.swift */; };
-		5DC054E927BBE9AE0077A75B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC054E827BBE9AE0077A75B /* ViewController.swift */; };
-		5DC054EC27BBE9AE0077A75B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC054EA27BBE9AE0077A75B /* Main.storyboard */; };
+		5DC054E927BBE9AE0077A75B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC054E827BBE9AE0077A75B /* TableViewController.swift */; };
 		5DC054EE27BBE9B10077A75B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC054ED27BBE9B10077A75B /* Assets.xcassets */; };
 		5DC054F127BBE9B10077A75B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC054EF27BBE9B10077A75B /* LaunchScreen.storyboard */; };
+		5DC0550127BBF21F0077A75B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC0550027BBF21F0077A75B /* CustomTableViewCell.swift */; };
+		5DC0550527BC04F50077A75B /* TableViewInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC0550427BC04F50077A75B /* TableViewInCell.swift */; };
+		5DC0550927BC09A00077A75B /* FirstModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC0550827BC09A00077A75B /* FirstModel.swift */; };
+		5DC0550D27BC09AC0077A75B /* SingleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC0550C27BC09AC0077A75B /* SingleModel.swift */; };
+		5DC0551927BC0F200077A75B /* ThirdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC0551827BC0F200077A75B /* ThirdModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5DC054E127BBE9AE0077A75B /* OneGoTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneGoTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC054E427BBE9AE0077A75B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DC054E627BBE9AE0077A75B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5DC054E827BBE9AE0077A75B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5DC054EB27BBE9AE0077A75B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DC054E827BBE9AE0077A75B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5DC054ED27BBE9B10077A75B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DC054F027BBE9B10077A75B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DC054F227BBE9B10077A75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC0550027BBF21F0077A75B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5DC0550427BC04F50077A75B /* TableViewInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewInCell.swift; sourceTree = "<group>"; };
+		5DC0550827BC09A00077A75B /* FirstModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModel.swift; sourceTree = "<group>"; };
+		5DC0550C27BC09AC0077A75B /* SingleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleModel.swift; sourceTree = "<group>"; };
+		5DC0551827BC0F200077A75B /* ThirdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		5DC054E327BBE9AE0077A75B /* OneGoTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				5DC054F927BBEA6D0077A75B /* Core */,
+				5DC054FB27BBEA7B0077A75B /* Controller */,
+				5DC0550727BC098B0077A75B /* Model */,
+				5DC054FF27BBF2050077A75B /* Cell */,
+				5DC054FD27BBEA970077A75B /* Helpers */,
+			);
+			path = OneGoTestProject;
+			sourceTree = "<group>";
+		};
+		5DC054F927BBEA6D0077A75B /* Core */ = {
+			isa = PBXGroup;
+			children = (
 				5DC054E427BBE9AE0077A75B /* AppDelegate.swift */,
 				5DC054E627BBE9AE0077A75B /* SceneDelegate.swift */,
-				5DC054E827BBE9AE0077A75B /* ViewController.swift */,
-				5DC054EA27BBE9AE0077A75B /* Main.storyboard */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5DC054FB27BBEA7B0077A75B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5DC054E827BBE9AE0077A75B /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5DC054FD27BBEA970077A75B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
 				5DC054ED27BBE9B10077A75B /* Assets.xcassets */,
 				5DC054EF27BBE9B10077A75B /* LaunchScreen.storyboard */,
 				5DC054F227BBE9B10077A75B /* Info.plist */,
 			);
-			path = OneGoTestProject;
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5DC054FF27BBF2050077A75B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5DC0550027BBF21F0077A75B /* CustomTableViewCell.swift */,
+				5DC0550427BC04F50077A75B /* TableViewInCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5DC0550727BC098B0077A75B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5DC0550827BC09A00077A75B /* FirstModel.swift */,
+				5DC0550C27BC09AC0077A75B /* SingleModel.swift */,
+				5DC0551827BC0F200077A75B /* ThirdModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +178,6 @@
 			files = (
 				5DC054F127BBE9B10077A75B /* LaunchScreen.storyboard in Resources */,
 				5DC054EE27BBE9B10077A75B /* Assets.xcassets in Resources */,
-				5DC054EC27BBE9AE0077A75B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +188,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DC054E927BBE9AE0077A75B /* ViewController.swift in Sources */,
+				5DC0550927BC09A00077A75B /* FirstModel.swift in Sources */,
+				5DC054E927BBE9AE0077A75B /* TableViewController.swift in Sources */,
+				5DC0550D27BC09AC0077A75B /* SingleModel.swift in Sources */,
 				5DC054E527BBE9AE0077A75B /* AppDelegate.swift in Sources */,
+				5DC0550127BBF21F0077A75B /* CustomTableViewCell.swift in Sources */,
 				5DC054E727BBE9AE0077A75B /* SceneDelegate.swift in Sources */,
+				5DC0550527BC04F50077A75B /* TableViewInCell.swift in Sources */,
+				5DC0551927BC0F200077A75B /* ThirdModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5DC054EA27BBE9AE0077A75B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DC054EB27BBE9AE0077A75B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5DC054EF27BBE9B10077A75B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2A23R4N5M7;
-				INFOPLIST_FILE = OneGoTestProject/Info.plist;
+				INFOPLIST_FILE = OneGoTestProject/Helpers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2A23R4N5M7;
-				INFOPLIST_FILE = OneGoTestProject/Info.plist;
+				INFOPLIST_FILE = OneGoTestProject/Helpers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
